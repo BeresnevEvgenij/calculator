@@ -4,7 +4,7 @@ let sign = '';
 let finish = false;
  
 const digit = ['0','1','2','3','4','5','6','7','8','9','.'];
-const action = ['-','+','x','/'];
+const action = ['-','+','X','/'];
 
 const out = document.querySelector('.calc-screen p');
 
@@ -66,7 +66,7 @@ document.querySelector('.buttons').onclick = (event) => {
                     out.textContent = 'Error';
                     a = '';
                     b = '';
-                    sign = '';
+                    sign = '';  
                     return;
                 }
                 a = a / b;
